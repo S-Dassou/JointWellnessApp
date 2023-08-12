@@ -20,7 +20,7 @@ class OnboardingVC: UIViewController {
     }
     
     @IBAction func nextButtonTapped(_ sender: Any) {
-        
+        onboardingPageViewController?.turnPage(to: pageControl.currentPage + 1)
     }
     
     @IBAction func skipButtonTapped(_ sender: Any) {
@@ -32,14 +32,12 @@ class OnboardingVC: UIViewController {
             onboardingPageViewController = onboardingViewController
         }
     }
-    
 }
 
 extension OnboardingVC: onboardingPageViewControllerDelegate {
     func setupPageController(numberOfPage: Int) {
         pageControl.numberOfPages = numberOfPage
     }
-    
     func turnPageController(to index: Int) {
         pageControl.currentPage = index
     }

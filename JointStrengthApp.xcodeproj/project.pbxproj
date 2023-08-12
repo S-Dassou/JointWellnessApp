@@ -11,13 +11,12 @@
 		F62D8A782A7295E3008D9C7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D8A772A7295E3008D9C7A /* SceneDelegate.swift */; };
 		F62D8A7D2A7295E3008D9C7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F62D8A7B2A7295E3008D9C7A /* Main.storyboard */; };
 		F62D8A7F2A7295E4008D9C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62D8A7E2A7295E4008D9C7A /* Assets.xcassets */; };
-		F62D8A822A7295E4008D9C7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F62D8A802A7295E4008D9C7A /* LaunchScreen.storyboard */; };
 		F62D8A972A7A95BF008D9C7A /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D8A962A7A95BF008D9C7A /* OnboardingVC.swift */; };
 		F62D8A9D2A7A9A0B008D9C7A /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F62D8A9A2A7A9A0B008D9C7A /* Poppins-Medium.ttf */; };
 		F62D8A9E2A7A9A0B008D9C7A /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F62D8A9B2A7A9A0B008D9C7A /* Poppins-Regular.ttf */; };
 		F62D8A9F2A7A9A0B008D9C7A /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F62D8A9C2A7A9A0B008D9C7A /* Poppins-SemiBold.ttf */; };
-		F62D8ABD2A846472008D9C7A /* OPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D8ABC2A846472008D9C7A /* OPageViewController.swift */; };
-		F62D8ABF2A8467DE008D9C7A /* OContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D8ABE2A8467DE008D9C7A /* OContentViewController.swift */; };
+		F62D8ABD2A846472008D9C7A /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D8ABC2A846472008D9C7A /* OnboardingPageViewController.swift */; };
+		F62D8ABF2A8467DE008D9C7A /* OnboardingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D8ABE2A8467DE008D9C7A /* OnboardingContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,14 +25,13 @@
 		F62D8A772A7295E3008D9C7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F62D8A7C2A7295E3008D9C7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F62D8A7E2A7295E4008D9C7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F62D8A812A7295E4008D9C7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F62D8A832A7295E4008D9C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F62D8A962A7A95BF008D9C7A /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		F62D8A9A2A7A9A0B008D9C7A /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		F62D8A9B2A7A9A0B008D9C7A /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		F62D8A9C2A7A9A0B008D9C7A /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
-		F62D8ABC2A846472008D9C7A /* OPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPageViewController.swift; sourceTree = "<group>"; };
-		F62D8ABE2A8467DE008D9C7A /* OContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OContentViewController.swift; sourceTree = "<group>"; };
+		F62D8ABC2A846472008D9C7A /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
+		F62D8ABE2A8467DE008D9C7A /* OnboardingContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +68,9 @@
 				F62D8A752A7295E3008D9C7A /* AppDelegate.swift */,
 				F62D8A772A7295E3008D9C7A /* SceneDelegate.swift */,
 				F62D8A962A7A95BF008D9C7A /* OnboardingVC.swift */,
-				F62D8ABC2A846472008D9C7A /* OPageViewController.swift */,
-				F62D8ABE2A8467DE008D9C7A /* OContentViewController.swift */,
+				F62D8ABC2A846472008D9C7A /* OnboardingPageViewController.swift */,
+				F62D8ABE2A8467DE008D9C7A /* OnboardingContentViewController.swift */,
 				F62D8A7B2A7295E3008D9C7A /* Main.storyboard */,
-				F62D8A802A7295E4008D9C7A /* LaunchScreen.storyboard */,
 				F62D8A832A7295E4008D9C7A /* Info.plist */,
 			);
 			path = JointStrengthApp;
@@ -156,7 +153,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F62D8A822A7295E4008D9C7A /* LaunchScreen.storyboard in Resources */,
 				F62D8A9D2A7A9A0B008D9C7A /* Poppins-Medium.ttf in Resources */,
 				F62D8A7F2A7295E4008D9C7A /* Assets.xcassets in Resources */,
 				F62D8A9F2A7A9A0B008D9C7A /* Poppins-SemiBold.ttf in Resources */,
@@ -172,11 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F62D8ABD2A846472008D9C7A /* OPageViewController.swift in Sources */,
+				F62D8ABD2A846472008D9C7A /* OnboardingPageViewController.swift in Sources */,
 				F62D8A762A7295E3008D9C7A /* AppDelegate.swift in Sources */,
 				F62D8A972A7A95BF008D9C7A /* OnboardingVC.swift in Sources */,
 				F62D8A782A7295E3008D9C7A /* SceneDelegate.swift in Sources */,
-				F62D8ABF2A8467DE008D9C7A /* OContentViewController.swift in Sources */,
+				F62D8ABF2A8467DE008D9C7A /* OnboardingContentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,14 +185,6 @@
 				F62D8A7C2A7295E3008D9C7A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F62D8A802A7295E4008D9C7A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F62D8A812A7295E4008D9C7A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

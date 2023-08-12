@@ -22,22 +22,29 @@ class OnboardingPageViewController: UIPageViewController {
         "A second page stating more app info incase you need them",
         "The very last page with yet more info for our esteem users"
     ]
-    var backgroundColor : [UIColor] = [.blue, .green, .red]
+    var backgroundColor: [UIColor] = [.blue, .green, .red]
     var pageImages: [UIImage] = []
     var currentIndex = 0
     
     override func viewDidLoad() {
-        
-        if let firstViewController = contentViewController(at: 0) {
-            setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
-        }
         super.viewDidLoad()
         dataSource = self
         delegate = self
+        if let firstViewController = contentViewController(at: 0) {
+            setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
+        }
+    }
+    func turnPage(to index: Int) {
+        currentIndex = index
+        if let currentController = contentViewController(at: index) {
+            setViewControllers([currentController], direction: .forward, animated: true)
+            self.pageViewControllerDelegate?.turnPageController(to: currentIndex)
+        }
     }
 }
 
 extension OnboardingPageViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+    
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         if var index = (viewController as? OnboardingContentViewController)?.index {
         index -= 1
@@ -68,7 +75,7 @@ extension OnboardingPageViewController: UIPageViewControllerDataSource, UIPageVi
         }
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         if let pageContentViewController = storyBoard.instantiateViewController(withIdentifier: "OnboardingContentViewController") as? OnboardingContentViewController {
-//            pageContentViewController.image = pageImages[index]
+            pageContentViewController.image = pageImages[index]
             pageContentViewController.subHeading = pageDescriptionText[index]
             pageContentViewController.heading = pageTitle[index]
             pageContentViewController.bgColor = backgroundColor[index]
