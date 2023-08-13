@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OnboardingVC: UIViewController {
+class OnboardingViewController: UIViewController {
     
     @IBOutlet weak var nextButtonTapped: UIButton!
     @IBOutlet weak var skipButtonTapped: UIButton!
@@ -34,7 +34,7 @@ class OnboardingVC: UIViewController {
     }
 }
 
-extension OnboardingVC: onboardingPageViewControllerDelegate {
+extension OnboardingViewController: onboardingPageViewControllerDelegate {
     func setupPageController(numberOfPage: Int) {
         pageControl.numberOfPages = numberOfPage
     }

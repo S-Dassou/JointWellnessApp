@@ -36,8 +36,7 @@ class OnboardingContentViewController: UIViewController {
     }
     
     func setupTextLabel() {
-        let attributedText = NSMutableAttributedString(string: heading, attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 15),
-                                                                                     NSAttributedString.Key.foregroundColor: UIColor.white])
+        let attributedText = NSMutableAttributedString(string: heading, attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 15), NSAttributedString.Key.foregroundColor: UIColor.white])
         
         attributedText.append(NSAttributedString(string: "\n\n\(subHeading)", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13), NSAttributedString.Key.foregroundColor: UIColor.white]))
         
